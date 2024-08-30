@@ -1,0 +1,8 @@
+создания реакт приложения
+npm create vite@latest
+
+установка node_modules(необходимые компоненты)
+npm install
+
+запуск приложения
+npm run dev

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+body {
+  background-color: #F2E5D7;
+  background-image: url("colorSpheres.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header {
+  padding: 20px 0;
+}
+body header .container {
+  display: flex;
+}
+body header .container a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("ep_back.svg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+body header .container h2 {
+  flex: 1;
+  text-align: center;
+  color: #24282E;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+body #starWars {
+  display: flex;
+  mix-blend-mode: luminosity;
+  margin: auto;
+}
+body .info h2 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Noto Serif", serif;
+  transform: scaleY(1.1);
+  font-size: 40px;
+}
+body .info .about {
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  margin: auto;
+  margin-top: 15px;
+}
+body .info .about p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  width: auto;
+}
+body .info .star {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  margin: auto;
+  margin-top: 15px;
+}
+body .info .star img {
+  opacity: 0.5;
+}
+body .info .star img.activeStar {
+  opacity: 1;
+}
+body .info p {
+  width: 30%;
+  margin: auto;
+  margin-top: 15px;
+  font-family: "Inter", sans-serif;
+}
+body .info a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=Movie.css.map */

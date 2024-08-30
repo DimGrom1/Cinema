@@ -1,0 +1,116 @@
+@import "../../_variables"
+*
+    margin: 0
+    padding: 0
+.Movie
+    header
+        a
+            background-image: url("ep_back.svg")
+        h2
+            color: #24282E
+
+.container
+    width: 90%
+    max-width: 1200px
+    margin: auto
+body
+    background-color: $lightBody
+    background-image: url("colorSpheres.svg")
+    background-repeat: no-repeat
+    background-size: cover
+    header
+        padding: 20px 0
+        .container
+            display: flex
+            a
+                display: block
+                width: 40px
+                height: 40px
+                background-repeat: no-repeat
+                background-size: 70%
+                background-position: center
+            h2
+                flex: 1
+                // background: tomato
+                text-align: center
+
+                padding-right: 40px
+                display: flex
+                align-items: center
+                justify-content: center
+                font-family: $sans
+    .Movie
+        #starWars
+            display: flex
+            mix-blend-mode: luminosity
+            margin: auto
+        .info
+            h2
+                text-align: center
+                margin-top: 10px
+                font-family: $serif
+                transform: scaleY(1.1)
+                font-size: 40px
+            .about
+                display: flex
+                justify-content: space-between
+                width: 15%
+                margin: auto
+                margin-top: 15px
+                p
+                    margin: 0
+                    font-family: $sans
+                    width: auto
+            .star
+                display: flex
+                justify-content: space-between
+                width: 10%
+                margin: auto
+                margin-top: 15px
+                img
+                    opacity: 0.5
+                    &.activeStar
+                        opacity: 1
+            p
+                width: 30%
+                margin: auto
+                margin-top: 15px
+                font-family: $sans
+            .buyTicketCont
+                text-align: center
+                margin-top: 50px
+                margin-bottom: 100px
+                a
+                    text-decoration: none
+                    font-family: $sans
+                    position: relative
+                    color: #24282E
+
+                    &:hover
+                        .line::after
+                            transform: none
+                    .line
+                        position: absolute
+                        width: 100%
+                        bottom: 0
+                        left: 0
+                        transform: translateY(100%)
+                        // background-color: tomato
+                        -webkit-mask-image: url("Vector 5.svg")
+                        mask-image: url("Vector 5.svg")
+                        -webkit-mask-repeat: no-repeat
+                        mask-repeat: no-repeat
+                        &::after
+                            content: ""
+                            position: absolute
+                            width: 100%
+                            height: 100%
+                            background: tomato
+                            transform: translateX(-100%)
+                            transition: 0.5s
+                            top: 0
+                            left: 0
+
+                        img
+                            width: 100%
+                            opacity: 0

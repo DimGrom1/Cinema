@@ -1,0 +1,119 @@
+@import "../../_variables"
+.Seats
+    .bg
+        background: #1E2129
+        width: 100%
+        height: 100%
+        z-index: -1
+        position: fixed
+    header
+        a
+            background-image: url("ep_back.svg")
+        h2
+            color: #E4DCD3
+            padding: 0
+            font-family: $sans
+        button
+            background: none
+            background-image: url("akar-icons_calendar.svg")
+            width: 40px
+            height: 40px
+            background-repeat: no-repeat
+            background-size: 70%
+            background-position: center
+            border: none
+    .container
+        text-align: center
+        margin-bottom: 20px
+        img
+            width: 60%
+        .places
+            max-width: 450px
+            margin: auto
+            button
+                height: 40px
+                width: 40px
+                background: #353B44
+                border: none
+                cursor: pointer
+                border-radius: 5px
+                margin: 5px
+                &:nth-child(1)
+                    margin-left: calc(( 100% - 190px ) / 2)
+                &:nth-child(4)
+                    margin-right: calc(( 100% - 190px ) / 2)
+                &:nth-child(41)
+                    margin-left: calc(( 100% - 240px ) / 2)
+                &:nth-child(45)
+                    margin-right: calc(( 100% - 240px ) / 2)
+                &.reserved
+                    background: #F2E5D7
+                    pointer-events: none
+        .legend
+            margin: 10px 0
+            display: flex
+            justify-content: center
+            gap: 20px
+            font-size: 20px
+            color: #E4DCD3
+            font-family: $sans
+            div
+                display: flex
+                align-items: center
+                span
+                    font-size: 35px
+                    margin-right: 5px
+                    transform: translateY(-1px)
+            .available
+                span
+                    color: #3D434D
+            .selected
+                span
+                    color: #FA6218
+            .reserved
+                span
+                    color: #F2E5D7
+        .time
+            display: flex
+            gap: 10px
+            justify-content: center
+            margin: 50px 0
+            button
+                color: #E4DCD3
+                height: 40px
+                padding: 0 10px
+                background: none
+                border: 1px solid #E4DCD3
+                border-radius: 8px
+                transition: 0.5s
+                cursor: pointer
+                font-family: $sans
+                &.activeTime
+                    background: #FA621866
+                    border: 1px solid #FA621880
+                    transition: 0.5s
+                    pointer-events: none
+                &:not(.activeTime):hover
+                    background: #e4dcd321
+        .buttons
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 25px
+            margin: auto
+            max-width: 450px
+            height: 50px
+            width: 80%
+            border-radius: 10px
+            border: none
+            transition: 0.6s
+        .payButton
+            background: #F2E3C9
+            margin-bottom: 6px
+            &:hover
+                background: #f7d69f
+        .cancelButton
+            background: none
+            color: #F2E5D7
+            &:hover
+                background: #13141a
