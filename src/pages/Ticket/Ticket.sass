@@ -1,0 +1,38 @@
+@import "../../_variables"
+.Ticket
+    margin: auto
+    margin-top: 40px
+    text-align: center
+    h2
+        font-family: $serif
+        text-align: center
+        color: #222
+        font-size: 30px
+        position: relative
+        img
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translateY(-50%) translateX(-50%)
+            z-index: -1
+    .ticketImg
+        margin-top: 50px
+        margin-bottom: 30px
+    p
+        width: 30%
+        margin: auto
+        margin-top: 15px
+        font-family: $sans
+        color: #767676
+        margin-bottom: 20px
+    .payButton
+        background: #22272E
+        color: #F2E5D7
+        &:hover
+            background-color: #22272eaa
+            color: #F2E5D7
+    .cancelButton
+        color: #22272E
+        &:hover
+            background-color: transparent
+            color: #22272Eaa

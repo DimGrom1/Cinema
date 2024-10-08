@@ -36,7 +36,7 @@ function Movie() {
           </div>
           <p>The Star Wars Trilogy Special Edition was a theatrical anniversary edition of the original trilogy, in order to celebrate the 20th anniversary of the release of Star Wars: Episode IV A New Hope.</p>
           <div className="buyTicketCont">
-            <a href="">BUY TICKET
+            <a href="/seats">BUY TICKET
               <div className="line">
                 <img src={vector} alt="" />
               </div>
